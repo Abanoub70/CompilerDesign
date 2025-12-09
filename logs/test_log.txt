@@ -1,0 +1,34 @@
+Running Tests...
+
+Test: Simple Declaration and Assignment
+Result: PASSED (Accepted)
+------------------------------
+Test: Arithmetic Precedence
+Result: PASSED (Accepted)
+------------------------------
+Test: Complex Logic and Parentheses
+Result: PASSED (Accepted)
+------------------------------
+Test: If Else
+Result: PASSED (Accepted)
+------------------------------
+Test: While Loop
+Result: PASSED (Accepted)
+------------------------------
+Test: For Loop
+Result: PASSED (Accepted)
+------------------------------
+Test: Nested Blocks
+Result: PASSED (Accepted)
+------------------------------
+Test: Syntax Error - Missing Semicolon
+Result: PASSED (Caught expected error: Syntax error at end of input: Unexpected end of input, expected Special_characters)
+------------------------------
+Test: Syntax Error - Bad Expression
+Result: PASSED (Caught expected error: Syntax error at line 2: Expected identifier, number, boolean or '('. Found '*' (Operators))
+------------------------------
+Test: Syntax Error - Unbalanced Braces
+Result: PASSED (Caught expected error: Syntax error at end of input: Unexpected end of input, expected Special_characters)
+------------------------------
+
+Total: 10, Passed: 10, Failed: 0

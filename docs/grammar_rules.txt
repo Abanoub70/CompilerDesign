@@ -1,0 +1,25 @@
+<program> ::= <statement_list>
+
+<statement_list> ::= <statement> | <statement> <statement_list>
+
+<statement> ::= <declaration> ';' 
+              | <assignment> ';'
+              | "if" '(' <expression> ')' <statement> [ "else" <statement> ]
+              | "while" '(' <expression> ')' <statement>
+              | "for" '(' <assignment> ';' <expression> ';' <assignment> ')' <statement>
+              | "return" <expression> ';'
+              | '{' <statement_list> '}'
+
+<declaration> ::= <type> <identifier>
+
+<type> ::= "int" | "float" | "double" | "bool" | "char"
+
+<assignment> ::= <identifier> '=' <expression>
+
+<expression> ::= <comparison> ( ('==' | '!=' | '<' | '<=' | '>' | '>=') <comparison> )*
+
+<comparison> ::= <term> ( ('+' | '-') <term> )*
+
+<term> ::= <factor> ( ('*' | '/') <factor> )*
+
+<factor> ::= <identifier> | <number> | '(' <expression> ')' | "true" | "false"
